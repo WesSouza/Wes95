@@ -1,4 +1,4 @@
-import { AllHtmlEntities as Entities } from 'html-entities';
+import { decode } from 'html-entities';
 import React, { memo } from 'react';
 
 import { Link } from '~/src/components/Link';
@@ -6,8 +6,6 @@ import { Text } from '~/src/ui';
 import { WesURL } from '~/src/utils/WesURL';
 
 import { TwitterEntities } from '../data/types';
-
-const htmlEntities = new Entities();
 
 interface Props {
   entities: TwitterEntities[];
@@ -47,7 +45,7 @@ function TextWithEntitiesComponent({ entities, text }: Props) {
 
     result.push(
       <React.Fragment key={index}>
-        {htmlEntities.decode(text.substring(lastIndex, startIndex))}
+        {decode(text.substring(lastIndex, startIndex))}
       </React.Fragment>,
     );
 

@@ -1,7 +1,10 @@
+import { enableMapSet } from 'immer';
 import React, { createElement } from 'react';
 import { render } from 'react-dom';
 
 import { WesExplorer } from './system/WesExplorer';
+
+enableMapSet();
 
 if (process.env.NODE_ENV === 'development') {
   // eslint-disable-next-line @typescript-eslint/no-var-requires

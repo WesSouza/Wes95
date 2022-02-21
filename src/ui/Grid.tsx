@@ -1,4 +1,3 @@
-/** @jsx jsx */
 import { CSSObject, jsx } from '@emotion/core';
 
 import { HStack, HStackProps } from './HStack';
@@ -29,8 +28,9 @@ export function Grid({
     ...UNSTABLE_css,
     display: 'grid',
     gridGap: spacing,
-    gridTemplateColumns: `calc(calc(100% / ${columns}) - ${(spacing / columns) *
-      (columns - 1)}px)`.repeat(columns),
+    gridTemplateColumns: `calc(calc(100% / ${columns}) - ${
+      (spacing / columns) * (columns - 1)
+    }px)`.repeat(columns),
   };
   return (
     <HStack UNSTABLE_css={css} {...props}>

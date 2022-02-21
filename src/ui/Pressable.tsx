@@ -1,4 +1,3 @@
-/** @jsx jsx */
 import { CSSObject, jsx } from '@emotion/core';
 import { MouseEvent, PointerEvent, ReactNode } from 'react';
 
