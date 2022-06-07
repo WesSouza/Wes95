@@ -1,4 +1,4 @@
-import React, { useCallback, useRef } from 'react';
+import { useCallback, useRef } from 'react';
 
 import { Scale, ZIndexes } from '~/src/constants/Styles';
 import { useClickOutside } from '~/src/hooks/useClickOutside';

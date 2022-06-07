@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { Icon } from '~/src/components';
 import { Icons, IconSizes } from '~/src/constants/Icons';
 import { Sounds, SoundsSrcs } from '~/src/constants/Sounds';

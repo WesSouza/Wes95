@@ -1,4 +1,4 @@
-import React, { PointerEvent, useCallback, useEffect, useRef } from 'react';
+import { PointerEvent, useCallback, useEffect, useRef } from 'react';
 
 import { IconGrid } from '~/src/components/IconGrid';
 import { Colors, ZIndexes } from '~/src/constants/Styles';

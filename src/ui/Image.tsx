@@ -1,5 +1,5 @@
-import { CSSObject, jsx } from '@emotion/core';
-import React, { ReactElement } from 'react';
+import { CSSObject } from '@emotion/react';
+import { cloneElement, ReactElement } from 'react';
 
 import {
   spreadAccessibilityPropsToAttributes,
@@ -82,7 +82,7 @@ export function Image({
 
   if ('svg' in props) {
     const { height, width = '100%', ...moreProps } = props;
-    return React.cloneElement(props.svg, {
+    return cloneElement(props.svg, {
       width,
       height,
       style: {

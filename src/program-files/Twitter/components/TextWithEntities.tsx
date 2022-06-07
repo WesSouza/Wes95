@@ -1,5 +1,5 @@
 import { decode } from 'html-entities';
-import React, { memo } from 'react';
+import { Fragment, memo } from 'react';
 
 import { Link } from '~/src/components/Link';
 import { Text } from '~/src/ui';
@@ -44,9 +44,9 @@ function TextWithEntitiesComponent({ entities, text }: Props) {
     }
 
     result.push(
-      <React.Fragment key={index}>
+      <Fragment key={index}>
         {decode(text.substring(lastIndex, startIndex))}
-      </React.Fragment>,
+      </Fragment>,
     );
 
     result.push(
@@ -60,9 +60,7 @@ function TextWithEntitiesComponent({ entities, text }: Props) {
 
   if (lastIndex < text.length) {
     result.push(
-      <React.Fragment key={entities.length}>
-        {text.substring(lastIndex)}
-      </React.Fragment>,
+      <Fragment key={entities.length}>{text.substring(lastIndex)}</Fragment>,
     );
   }
 

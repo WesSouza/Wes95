@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { Icons, IconSizes, IconSrcs } from '~/src/constants/Icons';
 import { Scale } from '~/src/constants/Styles';
 import { Image, ViewLayoutProps } from '~/src/ui';

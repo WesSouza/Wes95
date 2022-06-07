@@ -1,4 +1,4 @@
-import React, { memo } from 'react';
+import { memo } from 'react';
 
 import { Symbol } from '~/src/components';
 import { Dictionary } from '~/src/constants/CommonTypes';
@@ -27,14 +27,8 @@ interface Props {
 
 function TweetComponent({ id, statusesDictionary, usersDictionary }: Props) {
   const status = statusesDictionary[id];
-  const {
-    entities,
-    likeCount,
-    retweetCount,
-    retweetedByUserId,
-    text,
-    userId,
-  } = status;
+  const { entities, likeCount, retweetCount, retweetedByUserId, text, userId } =
+    status;
   const { name, username, imageUrl } = usersDictionary[userId];
 
   const retweetedByUserName = retweetedByUserId

@@ -37,7 +37,7 @@ type Return<T> = {
 
 export function useWindowMoveResize<
   T extends HTMLElement = HTMLDivElement,
-  U extends HTMLElement = HTMLButtonElement
+  U extends HTMLElement = HTMLButtonElement,
 >({
   onMoveResizeEnd: onDragEnd,
   resizeMaximum = { width: Infinity, height: Infinity },

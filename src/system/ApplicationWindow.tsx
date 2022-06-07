@@ -1,4 +1,4 @@
-import React, { useCallback, useRef } from 'react';
+import { memo, useCallback, useRef } from 'react';
 
 import { Window } from '~/src/components';
 import { ObjectRect } from '~/src/constants/CommonTypes';
@@ -102,4 +102,4 @@ function ApplicationWindowComponent({ id }: Props) {
   );
 }
 
-export const ApplicationWindow = React.memo(ApplicationWindowComponent);
+export const ApplicationWindow = memo(ApplicationWindowComponent);

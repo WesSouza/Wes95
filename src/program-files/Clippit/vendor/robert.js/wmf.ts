@@ -337,8 +337,9 @@ export function renderWMF(
   const h = specialHeader.bottom - specialHeader.top;
   if (dbg) {
     console.log(
-      `x=${specialHeader.left} y=${specialHeader.top} w=${w * 15} h=${h *
-        15} scale=${scaleX},${scaleY}`,
+      `x=${specialHeader.left} y=${specialHeader.top} w=${w * 15} h=${
+        h * 15
+      } scale=${scaleX},${scaleY}`,
     );
   }
   if (dbg) {
@@ -558,9 +559,9 @@ export function renderWMF(
         //ctx.moveTo((points[0] + offsetX) * scaleX, (points[1] + offsetY) * scaleY)
         if (dbg) {
           console.log(
-            `point: ${points[0]},${points[1]} => ${(points[0] - offsetX) *
-              scaleX +
-              left},${(points[1] - offsetY) * scaleY + top}`,
+            `point: ${points[0]},${points[1]} => ${
+              (points[0] - offsetX) * scaleX + left
+            },${(points[1] - offsetY) * scaleY + top}`,
           );
         }
         for (let i = 1; i < pointCount; i++) {
@@ -571,12 +572,9 @@ export function renderWMF(
           //ctx.lineTo((points[i * 2] + offsetX) * scaleX, (points[i * 2 + 1] + offsetY) * scaleY)
           if (dbg) {
             console.log(
-              `point: ${points[i * 2]},${points[i * 2 + 1]} => ${(points[
-                i * 2
-              ] -
-                offsetX) *
-                scaleX +
-                left},${(points[i * 2 + 1] - offsetY) * scaleY + top}`,
+              `point: ${points[i * 2]},${points[i * 2 + 1]} => ${
+                (points[i * 2] - offsetX) * scaleX + left
+              },${(points[i * 2 + 1] - offsetY) * scaleY + top}`,
             );
           }
         }
@@ -667,9 +665,9 @@ export function renderWMF(
         const xStart = dv.getInt16(posAfterString + 2, true);
         if (dbg) {
           console.log(
-            `str:${string} ${xStart},${yStart} => ${(xStart - offsetX) *
-              scaleX +
-              left},${(yStart - offsetY) * scaleY + top}`,
+            `str:${string} ${xStart},${yStart} => ${
+              (xStart - offsetX) * scaleX + left
+            },${(yStart - offsetY) * scaleY + top}`,
           );
         }
         ctx.fillStyle = textColor;

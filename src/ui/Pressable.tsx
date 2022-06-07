@@ -1,4 +1,4 @@
-import { CSSObject, jsx } from '@emotion/core';
+import { CSSObject } from '@emotion/react';
 import { MouseEvent, PointerEvent, ReactNode } from 'react';
 
 import { ReactRefProp } from '~/src/constants/CommonTypes';

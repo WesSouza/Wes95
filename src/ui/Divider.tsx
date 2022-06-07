@@ -1,5 +1,3 @@
-import { jsx } from '@emotion/core';
-
 import { Colors, Scale } from '~/src/constants/Styles';
 
 /**

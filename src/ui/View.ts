@@ -1,4 +1,4 @@
-import { CSSObject } from '@emotion/core';
+import { CSSObject } from '@emotion/react';
 import { CSSProperties, HTMLAttributes } from 'react';
 
 import { Themes, ThemeStyles } from './Themes';

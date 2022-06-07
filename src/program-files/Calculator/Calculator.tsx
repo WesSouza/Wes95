@@ -1,4 +1,4 @@
-import React, { memo, useCallback, useEffect } from 'react';
+import { memo, useCallback, useEffect } from 'react';
 
 import { Button, WindowMenu } from '~/src/components';
 import { Icons } from '~/src/constants/Icons';

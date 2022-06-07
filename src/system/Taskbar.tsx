@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { Scale, ZIndexes } from '~/src/constants/Styles';
 import { useSelector } from '~/src/hooks/useSelector';
 import { windowGetAll, windowGetFocusedId, windowStore } from '~/src/state';

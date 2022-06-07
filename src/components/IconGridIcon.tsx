@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { ObjectPosition } from '~/src/constants/CommonTypes';
 import { Icons, IconSizes } from '~/src/constants/Icons';
 import { Scale } from '~/src/constants/Styles';

@@ -1,4 +1,4 @@
-import React, { memo, useCallback, useEffect } from 'react';
+import { memo, useCallback, useEffect } from 'react';
 import nl2br from 'react-nl2br';
 
 import { Button, Icon } from '~/src/components';

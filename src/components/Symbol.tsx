@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { Scale } from '~/src/constants/Styles';
 import { Symbols, SymbolSvgs } from '~/src/constants/Symbols';
 import { Image, ViewLayoutProps } from '~/src/ui';

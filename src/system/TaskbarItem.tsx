@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useRef } from 'react';
+import { useCallback, useEffect, useRef } from 'react';
 
 import { Button, Icon } from '~/src/components';
 import { IconSizes } from '~/src/constants/Icons';

@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { Apps } from '~/src/constants/Apps';
 import { Icons } from '~/src/constants/Icons';
 import { modalOpen, windowOpen } from '~/src/state';
