@@ -6,8 +6,8 @@ export function useAudio({ src }: { src: string }) {
 
   useEffect(() => {
     fetch(src)
-      .then(response => response.arrayBuffer())
-      .then(buffer => {
+      .then((response) => response.arrayBuffer())
+      .then((buffer) => {
         audioUrl.current = URL.createObjectURL(
           new Blob([buffer], { type: 'audio/mp3' }),
         );

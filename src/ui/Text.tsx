@@ -1,5 +1,5 @@
-import { CSSObject, jsx } from '@emotion/core';
-import { FontWeightProperty } from 'csstype';
+import { CSSObject } from '@emotion/react';
+import { Property } from 'csstype';
 import { ReactNode } from 'react';
 import nl2brApply from 'react-nl2br';
 
@@ -34,7 +34,7 @@ interface Props extends ViewProps {
   /**
    * Sets the font weight of the text.
    */
-  fontWeight?: FontWeightProperty;
+  fontWeight?: Property.FontWeight;
 
   /**
    * Applies italics to the text.

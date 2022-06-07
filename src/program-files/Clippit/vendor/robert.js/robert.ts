@@ -173,9 +173,8 @@ export class BobResource {
   readAnims() {
     for (const groupID of Object.keys(this.rawAnims)) {
       const rawGroup = this.rawAnims[Number(groupID)];
-      const group: [number, number, number][][] = (this.anims[
-        Number(groupID)
-      ] = []);
+      const group: [number, number, number][][] = (this.anims[Number(groupID)] =
+        []);
 
       for (const rawAnim of rawGroup) {
         const dv = new DataView(rawAnim);
@@ -290,7 +289,7 @@ export class AniPlayer {
     this.commandNumber = 0;
     this.stepAnimation();
 
-    return new Promise<boolean>(resolve => {
+    return new Promise<boolean>((resolve) => {
       this.callback = resolve;
     });
   }

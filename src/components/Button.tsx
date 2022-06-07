@@ -1,4 +1,4 @@
-import React, { MouseEvent, PointerEvent, ReactNode } from 'react';
+import { MouseEvent, PointerEvent, ReactNode } from 'react';
 
 import { ReactRefProp } from '~/src/constants/CommonTypes';
 import { Pressable, Themes, ViewProps } from '~/src/ui';

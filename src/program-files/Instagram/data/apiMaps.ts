@@ -18,7 +18,7 @@ export function mapMedia(media: UserFeedResponseItemsItem): InstagramMedia {
   return {
     captionText: media.caption?.text ?? null,
     carouselImages:
-      media.carousel_media?.map(carouselMedia => ({
+      media.carousel_media?.map((carouselMedia) => ({
         image: carouselMedia.image_versions2.candidates,
       })) ?? [],
     code: media.code,

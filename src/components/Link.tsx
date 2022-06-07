@@ -1,4 +1,4 @@
-import React, { ReactNode, useCallback } from 'react';
+import { ReactNode, useCallback } from 'react';
 
 import { ReactRefProp } from '~/src/constants/CommonTypes';
 import { windowOpenUrl } from '~/src/state';

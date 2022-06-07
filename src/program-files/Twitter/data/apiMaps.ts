@@ -17,7 +17,7 @@ export function mapEntities(
 
   if (entities.hashtags) {
     modifyIndicesFromUnicodeToUTF16(text, entities.hashtags);
-    entities.hashtags.forEach(hashtag => {
+    entities.hashtags.forEach((hashtag) => {
       mappedEntities.push({
         label: `#${hashtag.text}`,
         length: hashtag.indices[1] - hashtag.indices[0],
@@ -30,7 +30,7 @@ export function mapEntities(
 
   if (entities.media && !extendedEntities?.media) {
     modifyIndicesFromUnicodeToUTF16(text, entities.media);
-    entities.media.forEach(media => {
+    entities.media.forEach((media) => {
       mappedEntities.push({
         label: null,
         length: media.indices[1] - media.indices[0],
@@ -43,7 +43,7 @@ export function mapEntities(
 
   if (entities.urls) {
     modifyIndicesFromUnicodeToUTF16(text, entities.urls);
-    entities.urls.forEach(url => {
+    entities.urls.forEach((url) => {
       mappedEntities.push({
         label: url.display_url,
         length: url.indices[1] - url.indices[0],
@@ -56,7 +56,7 @@ export function mapEntities(
 
   if (entities.user_mentions) {
     modifyIndicesFromUnicodeToUTF16(text, entities.user_mentions);
-    entities.user_mentions.forEach(hashtag => {
+    entities.user_mentions.forEach((hashtag) => {
       mappedEntities.push({
         label: `@${hashtag.screen_name}`,
         length: hashtag.indices[1] - hashtag.indices[0],
@@ -69,7 +69,7 @@ export function mapEntities(
 
   if (extendedEntities?.media) {
     modifyIndicesFromUnicodeToUTF16(text, extendedEntities.media);
-    extendedEntities.media.forEach(media => {
+    extendedEntities.media.forEach((media) => {
       mappedEntities.push({
         label: null,
         length: media.indices[1] - media.indices[0],

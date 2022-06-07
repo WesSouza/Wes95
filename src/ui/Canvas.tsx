@@ -1,4 +1,4 @@
-import { CSSObject } from '@emotion/core';
+import { CSSObject } from '@emotion/react';
 import { CSSProperties, RefObject } from 'react';
 
 import {

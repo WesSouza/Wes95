@@ -1,4 +1,4 @@
-import React, { memo, useCallback, useEffect, useRef } from 'react';
+import { memo, useCallback, useEffect, useRef } from 'react';
 
 import { Colors } from '~/src/constants/Styles';
 import { windowConfigure } from '~/src/state';

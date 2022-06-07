@@ -1,4 +1,4 @@
-import React, { FormEvent, RefObject, useCallback } from 'react';
+import { FormEvent, RefObject, useCallback } from 'react';
 
 import { ContentEditable, Themes, ViewProps } from '~/src/ui';
 

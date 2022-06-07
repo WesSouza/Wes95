@@ -1,4 +1,4 @@
-import React, { useCallback, useRef } from 'react';
+import { useCallback, useRef } from 'react';
 
 import { Button, Icon, Menu, MenuDirections, MenuTree } from '~/src/components';
 import { Apps } from '~/src/constants/Apps';
@@ -97,15 +97,10 @@ export function StartMenu({}: Props) {
     });
   }, []);
 
-  const {
-    activeMenu,
-    subMenu,
-    subMenuOpenerRect,
-    handleCancel,
-    handleSelect,
-  } = useMenu({
-    onMenuItemSelect: handleMenuSelect,
-  });
+  const { activeMenu, subMenu, subMenuOpenerRect, handleCancel, handleSelect } =
+    useMenu({
+      onMenuItemSelect: handleMenuSelect,
+    });
   handleCancelRef.current = handleCancel;
 
   const { elementRef: containerRef } = useClickOutside<HTMLDivElement>({

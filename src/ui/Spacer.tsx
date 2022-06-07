@@ -1,5 +1,3 @@
-import { jsx } from '@emotion/core';
-
 interface Props {
   /**
    * The minimum length this spacer can be shrunk to, along the axis or axes of
