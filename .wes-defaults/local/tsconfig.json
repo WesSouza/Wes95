@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "jsxImportSource": "@emotion/react",
+    "module": "Node16",
+    "outDir": "./dist",
+    "paths": {
+      "~/*": [
+        "./*"
+      ]
+    },
+    "rootDir": "./",
+  },
+  "exclude": [
+    "dist",
+  ]
+}

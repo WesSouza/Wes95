@@ -1,17 +1,18 @@
 {
   "compilerOptions": {
+    "allowJs": true,
     "alwaysStrict": true,
-    "baseUrl": "./",
     "declaration": true,
+    "declarationMap": true,
     "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
     "importHelpers": true,
-    "jsx": "react-jsx",
-    "jsxImportSource": "@emotion/react",
     "lib": [
+      "esnext",
       "dom",
-      "esnext"
+      "dom"
     ],
-    "module": "CommonJS",
+    "module": "Node16",
     "moduleResolution": "node",
     "noFallthroughCasesInSwitch": true,
     "noImplicitAny": true,
@@ -19,34 +20,37 @@
     "noImplicitThis": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "outDir": "./public",
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "sourceMap": false,
+    "strict": true,
+    "strictFunctionTypes": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "target": "es2017",
+    "jsx": "react-jsx",
+    "noEmit": true,
+    "plugins": [
+      {
+        "name": "typescript-plugin-css-modules"
+      }
+    ],
+    "baseUrl": "./",
+    "jsxImportSource": "@emotion/react",
+    "outDir": "./dist",
     "paths": {
       "~/*": [
         "./*"
       ]
     },
-    "preserveSymlinks": true,
-    "resolveJsonModule": true,
-    "rootDir": "./",
-    "sourceMap": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "strictFunctionTypes": true,
-    "strictNullChecks": true,
-    "strictPropertyInitialization": true,
-    "target": "es2017"
+    "rootDir": "./"
   },
   "include": [
-    "api",
-    "scripts",
-    "src",
-    "test",
-    "twitter-lite.d.ts"
+    "**/*.ts",
+    "**/*.tsx"
   ],
   "exclude": [
-    ".cache",
-    "coverage",
-    "dist",
     "node_modules",
+    "dist"
   ]
 }

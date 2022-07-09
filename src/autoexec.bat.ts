@@ -1,6 +1,6 @@
 import { enableMapSet } from 'immer';
 import React, { createElement } from 'react';
-import { render } from 'react-dom';
+import { createRoot } from 'react-dom/client';
 
 import { WesExplorer } from './system/WesExplorer';
 
@@ -15,4 +15,10 @@ if (process.env.NODE_ENV === 'development') {
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 (globalThis as any).state = require('./state');
 
-render(createElement(WesExplorer), document.getElementById('vga'));
+const element = document.getElementById('vga');
+if (!element) {
+  throw new Error('Please connect a monitor');
+}
+
+const root = createRoot(element);
+root.render(createElement(WesExplorer));

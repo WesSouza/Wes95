@@ -7,9 +7,9 @@ export enum Sounds {
 }
 
 export const SoundsSrcs = {
-  [Sounds.chimes]: require('../assets/CHIMES.mp3'),
-  [Sounds.chord]: require('../assets/CHORD.mp3'),
-  [Sounds.ding]: require('../assets/DING.mp3'),
-  [Sounds.tada]: require('../assets/TADA.mp3'),
-  [Sounds.theMicrosoftSound]: require('../assets/TheMicrosoftSound.mp3'),
+  [Sounds.chimes]: new URL('../assets/CHIMES.mp3', import.meta.url),
+  [Sounds.chord]: new URL('../assets/CHORD.mp3', import.meta.url),
+  [Sounds.ding]: new URL('../assets/DING.mp3', import.meta.url),
+  [Sounds.tada]: new URL('../assets/TADA.mp3', import.meta.url),
+  [Sounds.theMicrosoftSound]: new URL('../assets/TheMicrosoftSound.mp3', import.meta.url),
 };

@@ -5,8 +5,9 @@ import { windowConfigure } from '~/src/state';
 import { ApplicationWindowProps } from '~/src/system/ApplicationWindow';
 import { Canvas, Pressable } from '~/src/ui';
 
-import ClippitActUrl from './assets/clippit.act';
 import { AniPlayer, BobPack, BobResource } from './vendor/robert.js/robert';
+
+const ClippitActUrl = new URL('./assets/clippit.act', import.meta.url);
 
 const ClippitAnimations = {
   alert: [24, 0],
