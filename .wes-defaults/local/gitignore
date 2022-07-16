@@ -1,7 +1,3 @@
 .env
 .env.build
 .vercel
-
-# Allow some files for Vercel
-!/tsconfig.json
-!/package.json
