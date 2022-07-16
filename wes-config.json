@@ -6,6 +6,7 @@
     "eslint",
     "eslint-react",
     "eslint-typescript",
+    "github-vercel-deploy",
     "prettier",
     "parcel",
     "react",
