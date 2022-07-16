@@ -43,5 +43,9 @@
         "Location": "https://dev.to/wes/simple-react-state-management-29g"
       }
     }
-  ]
+  ],
+  "github": {
+    "enabled": false,
+    "silent": true
+  }
 }
