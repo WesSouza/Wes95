@@ -14,7 +14,7 @@ export function SysTray({}: Props) {
   const clock = useClock();
   const smallScreen = useSelector(windowStore, windowGetSmallScreen);
 
-  const audioPlayer = useAudio({ src: SoundsSrcs[Sounds.ding] });
+  const audioPlayer = useAudio({ src: SoundsSrcs[Sounds.ding].toString() });
 
   return (
     <>

@@ -19,6 +19,7 @@ export function useDrag({
   );
   const dragging = useRef(false);
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const handleMove = useCallback(
     rafDebounce((event: PointerEvent) => {
       if (!dragging.current) {
@@ -32,7 +33,7 @@ export function useDrag({
       }
       onDragMove?.(pointerCoordsRef.current);
     }),
-    [],
+    [onDragMove],
   );
 
   const handleEnd = useCallback(() => {

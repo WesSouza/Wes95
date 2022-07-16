@@ -8,6 +8,7 @@ export function useHostSize() {
     height: window.innerHeight,
   });
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const handleResize = useCallback(
     rafDebounce(() => {
       setSize({ width: window.innerWidth, height: window.innerHeight });
