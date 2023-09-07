@@ -1,0 +1,48 @@
+{
+  "name": "wes95",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "astro": "astro",
+    "build": "astro build",
+    "check": "astro check && tsc --noEmit && eslint . && prettier --check src",
+    "check:fix": "eslint --fix . && prettier --write src",
+    "dev": "astro dev",
+    "preview": "astro preview",
+    "start": "astro dev"
+  },
+  "dependencies": {
+    "@astrojs/solid-js": "^3.0.0",
+    "@astrojs/vercel": "^4.0.4",
+    "astro": "^3.0.10",
+    "solid-js": "^1.7.11"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.2.0",
+    "@typescript-eslint/eslint-plugin": "^6.6.0",
+    "@typescript-eslint/parser": "^6.6.0",
+    "eslint": "^8.48.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "prettier": "3.0.3",
+    "prettier-plugin-import-sort": "^0.0.7",
+    "typescript": "5.2.2"
+  },
+  "browserslist": [
+    "last 2 and_chr versions",
+    "last 2 chrome versions",
+    "last 2 firefox versions",
+    "last 2 ios_saf versions",
+    "last 2 safari versions"
+  ],
+  "importSort": {
+    ".js, .jsx": {
+      "parser": "babylon",
+      "style": "wes"
+    },
+    ".ts, .tsx": {
+      "parser": "typescript",
+      "style": "wes"
+    }
+  }
+}

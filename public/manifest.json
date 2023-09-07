@@ -1,0 +1,15 @@
+{
+  "name": "Wes95",
+  "short_name": "Wes95",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#347b7a",
+  "description": "What you see is what you got.",
+  "icons": [
+    {
+      "src": "apple-touch-icon-precomposed.png",
+      "sizes": "1024x1024",
+      "type": "image/png"
+    }
+  ]
+}
